@@ -1,1 +1,294 @@
-<h1>Hello World </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputeShare - Earn Money From Your Idle Phone</title>
+    <style>
+        :root {
+            --primary: #6e48aa;
+            --secondary: #9d50bb;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #4BB543;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .signup-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        
+        .confirmation {
+            display: none;
+            background-color: var(--success);
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .benefits, .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ComputeShare</div>
+            <div class="tagline">Earn money while you sleep by sharing your phone's idle computing power</div>
+            <a href="#signup" class="cta-button">Join Waitlist</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>1. Install Our App</h3>
+                    <p>Download the lightweight ComputeShare app (less than 5MB). Runs silently in the background.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💤</div>
+                    <h3>2. Earn While You Sleep</h3>
+                    <p>We use only idle resources when your phone is charging. No impact on battery life.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>3. Get Paid</h3>
+                    <p>Earn $0.50-$5 daily in $COMPT tokens or cash. Withdraw anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <div class="container">
+            <h2 class="section-title">Join Our Early Access</h2>
+            <div class="signup-form">
+                <form id="interest-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Type</label>
+                        <select id="phone" name="phone" required>
+                            <option value="">Select your phone</option>
+                            <option value="android">Android</option>
+                            <option value="iphone">iPhone</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="crypto" checked> 
+                            I'm interested in earning crypto ($COMPT)
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Reserve My Spot</button>
+                    <div class="confirmation" id="confirmation">
+                        Thank you! We'll contact you when we launch.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logo">ComputeShare</div>
+            <p>Democratizing computing power through smartphones</p>
+            <p>&copy; 2025 ComputeShare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('interest-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally send the data to your server
+            // For demo purposes, we'll just show the confirmation
+            document.getElementById('confirmation').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to confirmation
+            document.getElementById('confirmation').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
